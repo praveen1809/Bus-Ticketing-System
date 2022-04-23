@@ -5,7 +5,13 @@ import com.busTicketingApp.booking.entity.Bus;
 import java.util.List;
 
 public interface BusService {
-    Bus addBus(Bus bus);
 
-    List<Bus> fetchBusList();
+    public Bus addBus(Bus bus);
+
+    public List<Bus> fetchBusList();
+
+    public Bus fetchBusById(int busId);
+
+    public void deleteBusById(int busId);
+
 }
